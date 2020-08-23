@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<h1>Snake Game</h1>
 
     <canvas id="stage" width="400" height="400"></canvas>
+    <p>Use the keyboard arrows to move the snake around.</p>
     <script type="text/javascript">
 
         window.onload = function() {
@@ -59,6 +62,7 @@
                     if (trail[i].x == px && trail[i].y == py)
                     {
                         vx = vy = 0;
+                        tail = 5;
                     }
 
                 }
